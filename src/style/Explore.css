@@ -1,0 +1,32 @@
+.explore {
+  margin: 0 20px;
+}
+
+/* .explore__filter {
+  padding-top: 40px;
+} */
+
+.explore__form {
+  padding-top: 40px;
+  margin: 40px auto;
+  text-align: center;
+  max-width: 720px;
+  display: flex;
+  border-bottom: 4px solid var(--red-light);
+}
+
+.explore__form input {
+  flex: 1;
+}
+
+.explore__form input,
+.explore__form select {
+  padding: 8px;
+  outline: none;
+  border: none;
+}
+
+.explore__form select {
+  border-left: 2px solid var(--light-text);
+  cursor: pointer;
+}

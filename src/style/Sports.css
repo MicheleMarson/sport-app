@@ -1,0 +1,52 @@
+/* SportsPageBox */
+.sports {
+  height: calc(100vh - 70px);
+}
+
+.sportsPageBox {
+  max-width: 280px;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin: 20px;
+  padding: 30px;
+  position: relative;
+  background: white;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.sportsPageBox__name {
+  position: absolute;
+  font-size: 20px;
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  color: white;
+  display: none;
+  transform: translate(-50%, -50%);
+}
+
+.sportsPageBox:hover .sportsPageBox__name {
+  display: block;
+}
+
+.sportsPageBox:hover {
+  background: #f02f2f;
+}
+
+/* SportsPageBox */
+
+.sports__grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1040px;
+  justify-items: center;
+  grid-column-gap: 20px;
+  width: 80%;
+  margin: auto auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
