@@ -23,11 +23,9 @@ function App() {
 
   useEffect(() => {
     const getUser = async () => {
-      await fetch(userURl)
-        .then(res => res.json())
-        .then(data => {
-          setState({...state, userData:data})
-        })
+      let res = await fetch(userURl)
+      let data = await res.json()
+      setState({...state, userData:data})
     }
 
     getUser()
