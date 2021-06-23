@@ -15,12 +15,9 @@ const Explore = ({state, setState}) => {
 
   useEffect(() => {
     const getSport = async () => {
-      await fetch(url)
-        .then(res => res.json())
-        .then(data => {
-          setFeed(data)
-          console.log(data)
-        })
+      let res = await fetch(url)
+      let data = await res.json()
+      setFeed(data)
     }
 
     getSport()
